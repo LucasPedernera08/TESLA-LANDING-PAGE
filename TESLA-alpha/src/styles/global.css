@@ -1,0 +1,212 @@
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+    color:rgb(255, 34, 0);
+}
+main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+}
+
+.text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+}
+
+.link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+}
+
+
+.image{
+	padding:10px;
+}
+
+/*Clase div*/
+
+.divPadre{
+    color:yellow;
+    border-radius:8px;
+    padding: 1.5rem;
+    width: 100%;
+    align:center;
+}
+
+    .subparrafo-1{
+        background-color: rgb(234, 99, 32);
+        text-align: center;
+        padding: 10px;
+        color:azure;
+        margin: 45px 67px;
+        /* Esta property sirve para dejar un ancho fijo en px 
+        width: 300px;
+        height: 300px;*/
+
+    }
+    .subparrafo-2{
+        background-color:rgba(1, 13, 1, 0.162);
+        padding: 20px;
+        color: rgba(253, 253, 253, 0.937);
+        text-align: center; 
+        margin: 45px 67px;
+        /*width: 300px;
+        height: 300px;
+        Este height es para dejar un alto fijo en la contenedora*/
+
+    }
+    .subparrafo-3{
+        background-color:rgb(232, 197, 134);
+        padding:40px;
+        color: rgb(252, 250, 250);
+        text-align: center;
+        margin: 45px 67px;
+        /*width: 300px;
+        height: 300px;*/
+
+    }
+    .derechos{
+        color: rgba(243, 135, 11, 0.632);
+        text-shadow: 15cm;
+        text-align: center;
+    }
+
+/*Clase Navigations*/
+
+    .navigation-links {
+        width: 100% ;
+        top: 5rem;
+        left: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .navigation-links a {
+
+        padding: 10px 0px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.989);
+        margin: 0px 10px;
+     
+
+    }
+
+    .navigation-links a:hover,
+    .navigation-links a:focus
+    {
+
+        background-color: rgb(231, 142, 8);
+
+
+/*Clase buscador*/
+    }
+    .buscador{
+        width: 100% ;
+        top: 5rem;
+        left: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+ /* Esta es la clase Modal*/
+
+    .alertmodal{
+      background-color: rgb(107, 21, 21);
+      background-color: rgba(0,0,0,0.5);
+      overflow: auto;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: none;
+      position:fixed;
+      top: 0;
+      left: 0;
+
+    }
+    .alertmodal label{
+        color: aliceblue;
+        text-align: center;
+    }
+
+    .modalcontent{
+        background-color: rgb(101, 3, 3);
+        margin: 15% auto;
+        padding: 15px;
+        width: 15%;
+        padding: 20px 20px;
+        border-radius: 8px 8px 8px 8px;
+
+    }
+
+/* clase imput*/
+
+    #inputerror{
+        display: none;
+        font-size: 15px;
+        }
+
+        #inputerror.visible{
+        display: block;
+         }
+
+    input.invalido{
+        border-color: red;
+    }
+
+/*Clase botonera*/
+    .divbotonera{
+        width: 100% ;
+        top: 5rem;
+        left: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .botonera{
+
+        color: rgb(1, 9, 9);
+        border-radius: 10px 10px 10px 10px;
+        text-transform: uppercase;
+        background-color: rgb(216, 87, 1);
+        font-weight: bold;
+    }
+
+    .btncerrar{
+        color: rgba(255, 255, 255, 0.956);
+        background-color: black;
+        border-radius: 10px 10px 10px;
+        justify-content: center;
+        font-weight: bolder;
+        display: flex;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+
+ 
