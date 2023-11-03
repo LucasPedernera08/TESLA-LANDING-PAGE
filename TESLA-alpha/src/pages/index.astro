@@ -48,78 +48,113 @@ import Alertmodal from '../components/Alertmodal.astro';
 		<!--este es el Header-->
 
 <main>
-<header>
-	
+
+<header class="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white">
+
 	<div>
-	<svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor"></path></svg>
+		<svg
+ 		 class="h-6 w-28 transition-colors duration-500"
+ 	 	viewBox="0 0 342 35"
+ 	 	xmlns="http://www.w3.org/2000/svg"
+ 	 	><path
+   		 d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+    	fill="currentColor"></path>
+		</svg>
 	</div>
 
-<Navigation/>
+	<Navigation/>
 
 	<div class="image">
-		<img src="https://images5.alphacoders.com/114/1142015.png" alt="lorem"
+		<img src="https://www.tesla.com/sites/default/files/styles/customer_2x_mobile_1200x816/public/media-vimeo/205387084.jpg?itok=KCyifrsz" alt="lorem"
 		width= "800";
- 		height= "300";
+ 		height= "400";
 		>
 	</div>
 
-<div class = "divbotonera">
-	<button class="botonera" id="btnmodal">
-		Ingresar
-	</button>
-</div>
+	<div class = "divbotonera">
+		<button class="botonera" id="btnmodal">
+			Ingresar
+		</button>
+	</div>
 	
 	<div class= "divPadre" id="section1">
+
+</header>
 		
-		
-		<div class="subparrafo-1">
-			<p >
-				To get started, open the directory <code>src/pages</code> in your project.<br />
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-		</div>
+<body>	
 	
-		<div class="subparrafo-2">
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br />
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-		</div>
-		<div class="subparrafo-3">
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br />
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-		</div>
+
+<section class="section1">
+
+	<div class="divmadre" id="section2">
+
+		<ul role="list" class="link-card-grid">
+
+			<div class="card-1">
+				<img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2017/09/261183-ya-no-puedes-comprar-tesla-model-s.jpg?tf=3840x" 
+					 alt=""
+					 width="385"
+					 height="200"
+					 >
+				<Card
+				href="https://www.tesla.com/models"
+				title="MODEL S"
+				body="Model S is built for speed and range, with beyond ludicrous acceleration, unparalleled performance and a refined design."
+				/>
+			</div>
+
+			<div class="card-2">
+				<img src="https://cdn.motor1.com/images/mgl/y2mbjm/s3/tesla-model-3.jpg" 
+					 alt=""
+					 width="385"
+					 height="200"
+					 >
+			<Card
+				href="https://www.tesla.com/model3"
+				title="MODEL 3"
+				body="Model 3 is designed for electric-powered performance, with quick acceleration, long range and fast charging."
+			/>
+			</div>
+
+			<div class="card-3">
+				<img src="https://car-images.bauersecure.com/wp-images/12905/01-teslamodelx.jpg" 
+					 alt=""
+					 width="385"
+					 height="200"
+					 >
+			<Card
+				href="https://www.tesla.com/modelx"
+				title="MODEL X"
+				body="Model X is built for utility and performance,best in class storage and the highest towing capacity of any electric SUV."
+			/>
+			</div>
+
+			<div class="card-4">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDRths3hkQCUpKyzv0db5HHvyMRyv1YR0o8F5h4z8gUfWeuTFTa033ZT5BfQbmU_p7dvA&usqp=CAU" 
+					 alt=""
+					 width="385"
+					 height="200"
+					 >
+			<Card
+				href="https://www.tesla.com/modely"
+				title="MODEL Y"
+				body="Model Y is an all-electric midsize SUV with unparalleled protection and versatile cargo space"
+			/>
+			</div>
+		</ul>
 	</div>
 
+	</section>
 	
-<div class="divmadre" id="section2">
+	<section class="section2">
 
-	<ul role="list" class="link-card-grid">
-		<Card
-			href="https://www.tesla.com/"
-			title="TESLA"
-			body="This is a homepage created by ALIENS"
-		/>
-		<Card
-			href="https://www.tesla.com/"
-			title="TESLA v2"
-			body="This is a homepage created by ALIENS"
-		/>
-		<Card
-			href="https://astro.build/integrations/"
-			title="Integrations"
-			body="Supercharge your project with new frameworks and libraries."
-		/>
-		<Card
-			href="https://astro.build/themes/"
-			title="Themes"
-			body="Explore a galaxy of community-built starter themes."
-		/>
-	</ul>
-</div>
 
+
+		
+
+
+	</section>
+			
 </body>
 
 </main>
